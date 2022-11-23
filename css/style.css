@@ -92,12 +92,7 @@ img {
 .site-header-hero-wrapper {
   background-image: url("../img/site-header-bg.jpg");
 }
-.site-header-hero-wrapper:hover{
-  opacity: .8;
-}
-.site-header-hero-wrapper:active{
-  opacity: .6;
-}
+
 /* site-header */
 .site-header {
   padding-top: 40px;
@@ -114,6 +109,13 @@ img {
 
 .site-header-logo {
   display: flex;
+  flex-shrink: 0;
+}
+.site-header-logo:hover{
+  opacity: .8;
+}
+.site-header-logo:active{
+  opacity: .6;
 }
 .site-header-logo-img {
   width: 235px;
@@ -137,6 +139,7 @@ img {
   text-transform: uppercase;
   line-height: normal;
   color:var(--text-color);
+  white-space:nowrap;
 }
 .sitenav-link-item:hover
 {
