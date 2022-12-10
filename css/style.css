@@ -185,6 +185,12 @@ img {
   color:var(--text-color);
   white-space:nowrap;
 }
+
+.sitenav-mendium-font .sitenav-link-item
+{
+  font-size: 16px;
+  line-height: normal;
+}
 .sitenav-link-item:hover
 {
   color:var(--accent-color-green);
@@ -437,6 +443,57 @@ img {
 {
   outline-color: var(--accent-color-brawn);
 }
+
+/* SITE-FOOTER */
+
+.site-footer {
+  padding-top: 65px;
+  padding-bottom: 65px;
+  background-color: var(--light-brawn);
+  background-image: url("../img/site-header-bg.jpg");
+}
+.site-footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-footer-logo {
+  display: flex;
+}
+.site-footer-logo-img {
+  width: 235px;
+  height: 24px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.site-footer-logo:hover{
+  opacity: .8;
+}
+.site-footer-logo:active{
+  opacity: .6;
+}
+/* socials */
+.socials {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.socislos-item:not(:last-child) {
+  margin-right: 30px;
+}
+.socialos-link {
+  display: flex;
+  color: #333;
+  transition: color .3s ease;
+}
+.socialos-link:hover{
+  color:var(--accent-color-green);
+}
+.socialos-link:active{
+  color:var(--accent-color-green-60);
+}
 /* retina bg */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -446,7 +503,8 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
-  .site-header-hero-wrapper {
+  .site-header-hero-wrapper ,
+  .site-footer {
     background-image: url("../img/site-header-bg@2x.jpg");
   }
     .index-collacton-inner
